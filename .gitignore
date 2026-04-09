@@ -1,3 +1,11 @@
+# Ignore the environment variables file
+.env
+
+# Also ignore local variations if they exist
+.env.local
+.env.*.local
+
+
 # Logs
 logs
 *.log

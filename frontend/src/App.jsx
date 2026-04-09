@@ -5,8 +5,8 @@ function App() {
   const [todos, setTodos] = useState([]); // Todo 목록 저장
   const [input, setInput] = useState(""); // 입력창 텍스트 저장
 
-  // 백엔드 서버 주소 (로컬 테스트용)
-  const API_URL = "http://localhost:3000/api/todos";
+  // 백엔드 서버 주소 (Vercel 배포상황 전용)
+  const API_URL = "https://todo-app-deployment-ivory.vercel.app/api/todos";
 
   // 페이지가 처음 열릴 때 목록을 불러옵니다 (조회 - READ)
   useEffect(() => {
